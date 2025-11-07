@@ -35,11 +35,11 @@
             scroll-behavior: smooth;
         }
 
-        /* new card*/
+
 
         @import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
 
-        /* This pen */
+
         body {
             font-family: "Baloo 2", cursive;
             font-size: 16px;
@@ -69,7 +69,7 @@
             font-size: 2.5rem;
         }
 
-        /* Cards */
+
         .postcard {
             flex-wrap: wrap;
             display: flex;
@@ -266,7 +266,6 @@
             }
         }
 
-        /* COLORS */
         .postcard .postcard__tagbox .green.play:hover {
             background: #79dd09;
             color: black;
@@ -2168,21 +2167,23 @@
             min-height: 100vh;
             background-position: center;
             background-size: cover;
-            animation: pic 10s infinite;
+            animation: bgimages 20s linear infinite;
 
         }
 
-        @keyframes pic {
+        @keyframes bgimages {
             0% {
-                background-image: url(sereng.jpg);
+                background-image: url(wall.jpg);
             }
 
             50% {
-                background-image: url(6bebabec3962b81275a7fc77783c8726.jpg);
+                background-image: url(R.jpg);
             }
 
+
+
             100% {
-                background-image: url(49afeaba540d152b68a1c5fc96a81c48.jpg);
+                background-image: url(tree.jpg);
             }
 
         }
@@ -2385,6 +2386,23 @@
                 border-bottom: 1px solid #eee;
             }
 
+            .nav-link::hover,
+            .nav-link.active {
+                text-decoration: underline;
+            }
+
+            .nav-link::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                height: 2px;
+            }
+
+            .nav-link:after::after {
+                transform: scale(1);
+            }
+
 
             .top-bar-content {
                 flex-direction: column;
@@ -2495,7 +2513,6 @@
             margin: auto;
             font-family: Georgia, 'Times New Roman', Times, serif;
             font-weight: bold;
-            margin-top: 2rem;
 
             &:hover {
                 background-color: white;
@@ -2536,9 +2553,15 @@
             font-family: Georgia, 'Times New Roman', Times, serif;
             font-weight: bold;
             gap: 15px;
-            content: "";
+            content: '';
 
 
+
+
+        }
+
+        .container-fluid:hover {
+            transform: scale(1);
         }
 
         .item-mock {
@@ -2842,6 +2865,312 @@
                 font-size: 1.2em;
             }
         }
+
+
+        .l-heading {
+            color: #FFFFFF;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+            text-align: center;
+
+
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+            max-width: 90%;
+        }
+
+        .e-heading {
+            color: #FFC300;
+            font-size: 1.5rem;
+            font-weight: 600;
+
+            margin-top: 0;
+            margin-bottom: 20px;
+            margin-top: 2rem;
+
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+
+        @media (min-width: 768px) {
+            .hero-section {
+                min-height: 50vh;
+
+            }
+
+            .l-heading {
+                font-size: 3.5rem;
+            }
+
+            .e-heading {
+                font-size: 2rem;
+            }
+        }
+
+        .amazing-sectioning {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #0f172a;
+        }
+
+        .amazing-sectioning h2 {
+            color: #22c55e;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .amaizing-sectioning p {
+            color: #94a3b8;
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+        }
+
+        .amazing-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .rent-boxing {
+            background: #1e293b;
+            border-radius: 12px;
+            padding: 20px 30px;
+            min-width: 250px;
+            text-align: left;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .rent-boxing h4 {
+            color: #22c55e;
+            margin-bottom: 8px;
+        }
+
+        .rent-boxing p {
+            margin: 0;
+            color: #cbd5e1;
+            font-size: 0.95rem;
+        }
+
+        .loss-containering {
+            background: #1e293b;
+            border-radius: 12px;
+            padding: 30px;
+            max-width: 1000px;
+            margin: auto;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        input,
+        select,
+        textarea {
+            flex: 1 1 45%;
+            padding: 12px;
+            border-radius: 8px;
+            border: none;
+            outline: none;
+            background-color: #0f172a;
+            color: white;
+            font-size: 0.95rem;
+        }
+
+        textarea {
+            flex: 1 1 100%;
+            height: 100px;
+        }
+
+        .btns {
+            flex: 1 1 100%;
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btns-green {
+            background-color: #22c55e;
+            color: white;
+        }
+
+        .btns-green:hover {
+            background-color: #16a34a;
+        }
+
+        .btns-orange {
+            background-color: #f97316;
+            color: white;
+        }
+
+        .btns-orange:hover {
+            background-color: #ea580c;
+        }
+
+
+
+        .chat-actions {
+            position: fixed;
+            bottom: 30px;
+            right: 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .chat-actions button {
+            background-color: #22c55e;
+            border: none;
+            border-radius: 20px;
+            padding: 8px 15px;
+            color: white;
+            cursor: pointer;
+            font-size: 0.85rem;
+        }
+
+        .chat-actions button:hover {
+            background-color: #16a34a;
+        }
+
+        @media (max-width: 768px) {
+
+            input,
+            select,
+            textarea {
+                flex: 1 1 100%;
+            }
+
+            .rent-box {
+                text-align: center;
+            }
+        }
+
+        .why-travel {
+            position: relative;
+            background: url('R.jpg') center/cover no-repeat;
+            color: white;
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 4rem;
+
+        }
+
+        .why-text {
+            max-width: 40%;
+            font-size: 2.5rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .reason-box {
+            background-color: rgba(255, 255, 255, 0.92);
+            color: #222;
+            padding: 2.5rem;
+            max-width: 40%;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .reason-box h2 {
+            font-size: 1.8rem;
+            color: #600000;
+            text-transform: uppercase;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .reason-box p {
+            line-height: 1.8;
+            font-size: 1rem;
+            color: #333;
+        }
+
+        @media (max-width: 900px) {
+            .why-travel {
+                flex-direction: column;
+                padding: 2rem;
+                text-align: center;
+            }
+
+            .why-text,
+            .reason-box {
+                max-width: 100%;
+            }
+        }
+
+        .stats-section {
+            background: linear-gradient(rgba(10, 20, 40, 0.8), rgba(10, 20, 40, 0.8)),
+                url('simba.jpg') center/cover no-repeat;
+            color: #fff;
+            text-align: center;
+            padding: 80px 20px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 60px;
+        }
+
+        .stat-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 200px;
+        }
+
+        .icon-circle {
+            width: 100px;
+            height: 100px;
+            border: 2px solid rgba(255, 255, 255, 0.4);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            position: relative;
+            background-color: rgb(134, 134, 135);
+        }
+
+        .icon-circle::before {
+            content: "";
+            position: absolute;
+            width: 130px;
+            height: 130px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+        }
+
+        .icon-circle i {
+            font-size: 30px;
+            color: #fff;
+        }
+
+        .stat-number {
+            font-size: 40px;
+            font-weight: 700;
+            margin: 10px 0 5px 0;
+        }
+
+        .stat-label {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .stats-section {
+                flex-direction: column;
+                gap: 40px;
+            }
+        }
     </style>
 
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
@@ -2857,9 +3186,22 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <style>
+        .scrolled {
+            background-color: white !important;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: background 0.4s ease, box-shadow 0.4s ease;
+        }
+    </style>
+
+
 </head>
 
 <body>
+
+
+
 
 
     <div class="contact-info-container" style="position: fixed;
@@ -2873,7 +3215,7 @@
     </div>
 
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm p-3 font-size:15px" style="position: fixed;
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent shadow-sm p-3 font-size:25px" style="position: fixed;
   width: 100%;z-index: 99999; margin-top:50px">
         <div class="container-fluid">
 
@@ -2915,7 +3257,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="atle.html">Contact</a>
+                        <a class="nav-link" href="#only-cont">Contact</a>
                     </li>
 
 
@@ -2930,29 +3272,30 @@
 
     <div class="hero">
         <h3 id="greetingMassage">loading.....</h3>
+
+
         <div class="hero-section">
-            <h1 class="l-heading" style="font-size: 5rem; ">Best Ultimate
-                Tanzania
-                safari
-                company in Arusha
+            <h1 class="l-heading">Best Ultimate Tanzania safari company in Arusha
             </h1>
-            <h2 class="e-heading">Hollgrivens Tour Company</h2>
+            <h2 class="e-heading">Hollgrivens Tour Safari</h2>
         </div>
+
 
 
 
 
         <div class="sem-btrn">
-            <a href="atle.html">Book Now</a>
+            <a href="#only-cont">Book Now</a>
 
 
         </div>
+    </div>
 
-        <!-- <div class="whtsaap">
+    <!-- <div class="whtsaap">
             <a href="">fa-fa-wtsaap</a>
         </div> -->
 
-        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill"
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill"
             viewBox="0 0 16 16" style="margin: auto;">
             <path
                 d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
@@ -3014,12 +3357,9 @@
                 <img src="serengeti.jpg" alt="Place 1">
                 <div class="card-content">
                     <h3 class="h3-waf" style="color:#ff6600">Serengeti National Park</h3>
-                    <p style="color: black;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia eius
-                        maiores magni
-                        suscipit quis,
-                        reiciendis odit consectetur labore accusamus laboriosam nisi nulla amet sequi. Impedit
-                        molestias
-                        beatae cumque alias perspiciatis..</p>
+                    <p style="color: black;">Witness the Great Migration—millions of wildebeest crossing the vast
+                        plains. It’s the ultimate African safari to view the Big Five in an untouched, dramatic
+                        landscape.</p>
                     <div class="stars">★★★★★</div>
                     <a href="#" class="bten" style="width: 100px;">Explore</a>
                 </div>
@@ -3028,14 +3368,9 @@
             <div class="card">
                 <img src="tarangire.jpg" alt="Place 1">
                 <div class="card-content">
-                    <h3 class="h3-waf" style="color:#ff6600">tarangile National Park</h3>
-                    <p style="color:  black;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia
-                        eius
-                        maiores magni
-                        suscipit quis,
-                        reiciendis odit consectetur labore accusamus laboriosam nisi nulla amet sequi. Impedit
-                        molestias
-                        beatae cumque alias perspiciatis..</p>
+                    <h3 class="h3-waf" style="color:#ff6600">tarangire National Park</h3>
+                    <p style="color:  black;">See huge herds of elephants and towering baobab trees. This beautiful,
+                        less-crowded park offers a genuine safari experience, especially for bird lovers.</p>
                     <div class="stars">★★★★★</div>
                     <a href="#" class="bten" style="width: 100px;">Explore</a>
                 </div>
@@ -3045,12 +3380,8 @@
                 <img src="img.jpg" alt="Place 1">
                 <div class="card-content">
                     <h3 class="h3-waf" style="color:#ff6600">Zanzibari(Unguja & pemba)</h3>
-                    <p style="color: black;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia eius
-                        maiores magni
-                        suscipit quis,
-                        reiciendis odit consectetur labore accusamus laboriosam nisi nulla amet sequi. Impedit
-                        molestias
-                        beatae cumque alias perspiciatis..</p>
+                    <p style="color: black;">Explore historic Stone Town and relax on the white-sand beaches of Unguja.
+                        Find quiet luxury and world-class diving on the lush spice island of Pemba.</p>
                     <div class="stars">★★★★★</div>
                     <a href="#" class="bten" style="width: 100px;">Explore</a>
                 </div>
@@ -3060,12 +3391,8 @@
                 <img src="lake manyara.jpg" alt="Place 1">
                 <div class="card-content">
                     <h3 class="h3-waf" style="color: #ff6600;">Lake Manyara National Park</h3>
-                    <p style="color: black;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia eius
-                        maiores magni
-                        suscipit quis,
-                        reiciendis odit consectetur labore accusamus laboriosam nisi nulla amet sequi. Impedit
-                        molestias
-                        beatae cumque alias perspiciatis..</p>
+                    <p style="color: black;">Famous for its unique tree-climbing lions and huge flocks of flamingos
+                        along the soda lake shore. It's a lush, compact park perfect for a diverse, exciting safari.</p>
                     <div class="stars">★★★★★</div>
                     <a href="#" class="bten" style="width: 100px;">Explore</a>
                 </div>
@@ -3075,12 +3402,8 @@
                 <img src="mafia.jpg" alt="Place 1">
                 <div class="card-content">
                     <h3 class="h3-waf" style="color: #ff6600;">Mafia Island</h3>
-                    <p style="color: black;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia eius
-                        maiores magni
-                        suscipit quis,
-                        reiciendis odit consectetur labore accusamus laboriosam nisi nulla amet sequi. Impedit
-                        molestias
-                        beatae cumque alias perspiciatis..</p>
+                    <p style="color: black;">A paradise for divers and snorkelers. Visit this secluded marine park to
+                        swim with gentle whale sharks and explore vibrant, unspoiled coral reefs.</p>
                     <div class="stars">★★★★★</div>
                     <a href="#" class="bten" style="width: 100px;">Explore</a>
                 </div>
@@ -3090,12 +3413,8 @@
                 <img src="lake.jpg" alt="Place 1">
                 <div class="card-content">
                     <h3 class="h3-waf" style="color: #ff6600;">Salous Game Reserve</h3>
-                    <p style="color: black;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia eius
-                        maiores magni
-                        suscipit quis,
-                        reiciendis odit consectetur labore accusamus laboriosam nisi nulla amet sequi. Impedit
-                        molestias
-                        beatae cumque alias perspiciatis..</p>
+                    <p style="color: black;">Discover Africa’s largest game reserve and a UNESCO World Heritage Site.
+                        Experience classic safaris, boat trips on the Rufiji River, and walking safaris.</p>
                     <div class="stars">★★★★★</div>
                     <a href="#" class="bten" style="width: 100px;">Explore</a>
                 </div>
@@ -3129,8 +3448,8 @@
             <div class="video-wrapper">
                 <div class="video-placeholderes">
                     <div class="video-overlay-content">
-                        <iframe width="740" height="416" src="https://www.youtube.com/embed/jIwyy2D5iag"
-                            title="The Serengeti 4K - Scenic Wildlife Film With African Music" frameborder="0"
+                        <iframe width="756" height="425" src="https://www.youtube.com/embed/IfxoZ_tiE0g"
+                            title="Serengeti National Park, Tanzania  [Amazing Places 4K]" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -3145,6 +3464,32 @@
 
 
     </div>
+
+    <section class="stats-section">
+        <div class="stat-box">
+            <div class="icon-circle"><i class="fas fa-plane"></i></div>
+            <div class="stat-number">100</div>
+            <div class="stat-label">Luxury Safaris</div>
+        </div>
+
+        <div class="stat-box">
+            <div class="icon-circle"><i class="fas fa-home"></i></div>
+            <div class="stat-number">50</div>
+            <div class="stat-label">Mountain Climbing</div>
+        </div>
+
+        <div class="stat-box">
+            <div class="icon-circle"><i class="fas fa-ship"></i></div>
+            <div class="stat-number">100</div>
+            <div class="stat-label">Beach Holidays</div>
+        </div>
+
+        <div class="stat-box">
+            <div class="icon-circle"><i class="fas fa-ticket-alt"></i></div>
+            <div class="stat-number">70</div>
+            <div class="stat-label">Cultural Activities</div>
+        </div>
+    </section>
 
 
     <div class="loof">
@@ -3165,7 +3510,7 @@
                     <img src="8d5165000043347b1df79091f0ff6110.jpg" alt="Luxury hotel or lodge room">
                     <div class="card-overlay">
                         <p class="card-title">LODGE & HOTEL</p>
-                        <a href="video.html" class="view-button">VIEW</a>
+                        <a href="#" class="view-button">VIEW</a>
                     </div>
                 </div>
 
@@ -3173,7 +3518,7 @@
                     <img src="7422cedb08b8ec241ea2e6c689e13d5c.jpg" alt="Permanent settlement accommodation tent">
                     <div class="card-overlay">
                         <p class="card-title">PERMANENT SETTLEMENT ACCOMMODATION</p>
-                        <a href="germ.html" class="view-button">VIEW</a>
+                        <a href="#" class="view-button">VIEW</a>
                     </div>
                 </div>
 
@@ -3181,7 +3526,7 @@
                     <img src="b2bf1c68ffa43769fae0bcfa239c57ab.jpg" alt="Temporary campsite tent and outdoor area">
                     <div class="card-overlay">
                         <p class="card-title">TEMPORARY CAMPSITE</p>
-                        <a href="germ.html" class="view-button">VIEW</a>
+                        <a href="#" class="view-button">VIEW</a>
                     </div>
                 </div>
             </div>
@@ -3236,7 +3581,7 @@
 
                     <div class="activity-card featured hidden">
                         <div class="card-image">
-                            <img src="little-governors-camp-masai-mara-safari-bush-dining-scaled.webp" alt="Game Drive">
+                            <img src="7149d752291265267c69a4246c9b5753.jpg" alt="Game Drive">
                         </div>
                         <div class="card-content">
                             <h3>Game Drive</h3>
@@ -3292,6 +3637,20 @@
                         </div>
                         <div class="card-content">
                             <h3>Chef cooking in safari camp kitchen</h3>
+                            <p>Go behind-the-scenes! Learn 'Bush Gourmet' secrets from your private chef, from
+                                cooking
+                                to
+                                crafting sundowner cocktails.</p>
+                            <a href="#" class="details-button">Explore</a>
+                        </div>
+                    </div>
+
+                    <div class="activity-card featured hidden">
+                        <div class="card-image">
+                            <img src="Olivers_Camp-8.jpg" alt="Ballon Activities">
+                        </div>
+                        <div class="card-content">
+                            <h3>Ballon Activities</h3>
                             <p>Go behind-the-scenes! Learn 'Bush Gourmet' secrets from your private chef, from
                                 cooking
                                 to
@@ -3375,7 +3734,22 @@
 
 
 
+        <section class="why-travel">
+            <div class="why-text">
+                <h1>Why Travel<br>with Holligrvens Adventures &<br>Safaris?</h1>
+            </div>
 
+            <div class="reason-box">
+                <h2>TRAVEL WITH REASONS</h2>
+                <p>
+                    Our accommodation is both luxurious and authentic. We promise unexampled comfort
+                    and exclusivity while staying true to the vibrant soul and spirit of each, unique
+                    destination. Our private game viewing areas have limits on guest figures, meaning
+                    smaller vehicles and people, with more intimate and over-close hassles with wildlife
+                    in their natural niche.
+                </p>
+            </div>
+        </section>
 
 
 
@@ -3445,6 +3819,10 @@
 
         </main>
 
+
+
+
+
         <div class="map">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15951.101880486005!2d36.6575122!3d-3.3768222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18371c6c0393046f%3A0xc48c0379261a8685!2sArusha%2C%20Tanzania!5e0!3m2!1sen!2sus!4v1699999999999!5m2!1sen!2sus"
@@ -3452,6 +3830,52 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
 
         </div>
+
+        <section class="amazing-sectioning" id="only-cont">
+            <h2>Get In Touch Us</h2>
+            <p style="color: white;">amazing us today to start planning your unforgettable Tanzanian experience.</p>
+
+            <div class="amazing-info">
+                <div class="rent-boxing">
+                    <h4>📞 Phone</h4>
+                    <p>+255 715 830 783</p>
+                </div>
+                <div class="rent-boxing">
+                    <h4>📍 Location</h4>
+                    <p>Arusha, Tanzania</p>
+                </div>
+                <div class="rent-boxing">
+                    <h4>🕒 Office Hours</h4>
+                    <p>Mon - Fri: 8:00 AM - 5:00 PM<br>Sat: 9:00 AM - 2:00 PM</p>
+                </div>
+            </div>
+
+            <div class="loss-containering">
+                <form>
+                    <input type="text" placeholder="Your Name" required style="height: 50px;">
+                    <input type="email" placeholder="Your Email" required style="height: 50px;">
+                    <input type="phone" placeholder="Your phone number" required style="height: 50px;">
+                    <select required>
+                        <option>Select Tour Package</option>
+                        <option>Serengeti Safari</option>
+                        <option>Tarangire Safari</option>
+                        <option>Zanzibar Safari</option>
+                        <option>Lake Manyara Safari</option>
+                        <option>Mafia Island Safari/option>
+                        <option>Salous Game Reserve Safari</option>
+                    </select>
+                    <input type="date" required style="height: 50px;">
+                    <input type="number" placeholder="Number of People" min="1" required style="height: 50px;">
+                    <textarea placeholder="Your Message"></textarea>
+                    <button class="btns btns-green">Send Message</button>
+                </form>
+
+            </div>
+        </section>
+
+
+
+
 
 
         <footer>
@@ -3615,7 +4039,7 @@
                     const visionSlide = document.getElementById('vision-slide');
                     const missionSlide = document.getElementById('mission-slide');
 
-                    const duration = 5000;
+                    const duration = 3000;
 
                     let isVisionActive = true;
 
@@ -3636,6 +4060,19 @@
                     setInterval(switchSlide, duration);
                 });
             </script>
+            <script>
+                const navbar = document.querySelector("nav"); // it selects your existing navbar tag
+
+                window.addEventListener("scroll", () => {
+                    if (window.scrollY > 50) {
+                        navbar.classList.add("scrolled");
+                    } else {
+                        navbar.classList.remove("scrolled");
+                    }
+                });
+            </script>
+
+
 
 
 </body>
